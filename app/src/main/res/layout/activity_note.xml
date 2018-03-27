@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="java17.totoro.pumpapp.NoteActivity"
+    android:background="@drawable/main_bg2">
+
+    <LinearLayout
+        android:id="@+id/note_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/note_btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:gravity="center"
+            android:text="Add"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/note_btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:gravity="center"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/rounded_button_gray"/>
+
+        <Button
+            android:id="@+id/note_btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:gravity="center"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/rounded_button_gray"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </ListView>
+
+</RelativeLayout>

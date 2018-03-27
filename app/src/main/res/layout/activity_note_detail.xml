@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/nd_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/nd_btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:background="@drawable/rounded_button_gray"
+            android:gravity="center"
+            android:text="Add"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/nd_btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Edit"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/nd_btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="33.3"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Delete"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/note_detail_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/note_detail_tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/note_detail_tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/note_detail_tvNoteText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="note text" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
